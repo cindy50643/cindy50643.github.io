@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店面資訊-深夜裡的法國手工甜點</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="./home.html"><img src="./img/logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav1" id="navbarNav">
+            <ul class="navbar-nav nav1">
+                <li class="nav-item ml-5">
+                    <a class="nav-link" href="./menu.html">菜單</a>
+                </li>
+                </li>
+
+                <li class="nav-item mr-5 ml-5">
+                    <a class="nav-link" href="./news.html">優惠資訊</a>
+                </li>
+                <a class="logo" href="./home.html"><img src="./img/logo.jpg" alt=""></a>
+                <li class="nav-item ml-5 mr-5">
+                    <a class="nav-link" href="./reserve.html">預定流程</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./store.html">店面資訊</a>
+                </li>
+            </ul>
+
+        </div>
+
+        </div>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        let lastScorll = 0;
+        $(window).scroll(function () {
+            const nowScroll = $(this).scrollTop();
+            if (nowScroll > lastScorll) {
+                $('.navbar').addClass('hide')
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+            lastScorll = nowScroll;
+        })
+    </script>
+
+
+
+<div class="store">
+
+        <div class="container">
+            <div class="row">
+              
+            <div class="map col" data-aos="fade-up"
+            data-aos-duration="2000">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.128574220056!2d121.5246496154469!3d25.0297103446164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9907a168b5b%3A0x33d2815c8c3eb8c5!2z5rex5aSc6KOh55qE5rOV5ZyL5omL5bel55Sc6bue!5e0!3m2!1szh-TW!2stw!4v1636112827687!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col storeboxbig" data-aos="fade-up"
+            data-aos-duration="2000">
+                <div class="storebox">
+                    <h1>深夜裡的法國手工甜點</h1>
+                    <div class="line" data-aos="linemove"></div>
+                    <p>106台北市大安區金山南路二段141巷1號</p>
+                    <div class="time">
+                    <p>營業時間：</p>
+                    <p>星期一、二、四、五、六 16:00-0:00<br>
+                        星期三公休
+                    </p>
+                </div>
+                <p class="tel2">電話：02-2367-3067</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+    <div class="footer">
+        <div class="container">
+            <div class="row footerbox">
+                <div class="icon col">
+                    <a class="fb" href="https://www.facebook.com/minuit1200/?ref=page_internal"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a class="ig" href="https://www.instagram.com/minuit1200/"><i class="fab fab fa-instagram"></i></a>
+                    <a class="LINE" href="https://liff.line.me/1654883387-DxN9w07M/c/NbA1D3ypN"><i class="fab fa-line"></i></a>
+                </div>
+                <div class="line2"></div>
+                <div class="tel col">
+                    <p><i class="fas fa-phone-alt"></i> 02-2367-3067</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 臺北市大安區金山南路二段141巷1號</p>
+                </div>
+
+            </div>
+        </div>
+        <P class="c">Copyright ©minuity All Rights Reserved.</P>
+    </div>
+
+        
+   <script>
+        AOS.init();
+        AOS.refresh();
+
+      </script>
+      
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

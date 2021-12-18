@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預定流程-深夜裡的法國手工甜點</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="./home.html"><img src="./img/logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav1" id="navbarNav">
+            <ul class="navbar-nav nav1">
+                <li class="nav-item ml-5">
+                    <a class="nav-link" href="./menu.html">菜單</a>
+                </li>
+                </li>
+
+                <li class="nav-item mr-5 ml-5">
+                    <a class="nav-link" href="./news.html">優惠資訊</a>
+                </li>
+                <a class="logo" href="./home.html"><img src="./img/logo.jpg" alt=""></a>
+                <li class="nav-item ml-5 mr-5">
+                    <a class="nav-link" href="./reserve.html">預定流程</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./store.html">店面資訊</a>
+                </li>
+            </ul>
+
+        </div>
+
+        </div>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        let lastScorll = 0;
+        $(window).scroll(function () {
+            const nowScroll = $(this).scrollTop();
+            if (nowScroll > lastScorll) {
+                $('.navbar').addClass('hide')
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+            lastScorll = nowScroll;
+        })
+    </script>
+
+    <div class="reserve">
+        <div class="title" data-aos="fade-up" data-aos-duration="2000">
+            <h2>預定流程</h2>
+        </div>
+        <div class="container">
+            <div class="step" data-aos="fade-up" data-aos-duration="2000">
+                <div class="steptextbox">
+                    <div class="iconpic">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </div>
+                    <h3>按照格式填寫訂單，以私訊方式傳給深夜裡的法國手工甜點</h3>
+                    <p>回覆訊息的時間為每日11:00~20:00，有時訊息量多，回覆速度會較慢，還請各位朋友耐心等候喔！<br>
+                        請至少於預訂取貨(或收件)的4天前下訂單，若不指定取貨(或收件)日期，將於收到匯款後4日內安排出貨。太臨時的訂單可能會趕不出來，還請各位留一點時間給我們製作好吃的甜點喔！<br>
+                        星期三公休不開放預訂自取，星期四、日宅配無法到貨，請避開以上這些時段喔！
+                    </p>
+                    <h6>訂單格式</h6>
+                    <div class="copybigbox ">
+                        <div class="copybox" id="mystyle">
+                            <p id="copy">1. 欲訂購的品項及數量(訂購10吋完整不切塔請註明)：<br>
+                                2. 訂購人姓名/電話：<br>
+                                3. 訂購用途慶生/送禮/想吃等)：<br>
+                                4. 是否搭配優惠(請拍照或截圖出示，優惠不能併用)：<br>
+                                5. 需要提袋數量(提袋不免費提供，可加購)：<br>
+                                ＊<br>
+                                【自取】<br>
+                                取貨日期(周三公休不開放)： <br>
+                                取貨時段 (18:00、19:00、20:00、23:00)：<br>
+                                【宅配】<br>
+                                收件日期(週四、週日無法到貨)：<br>
+                                收件地址：<br>
+                                ＊<br>
+                                發票（1.隨甜點出貨/2.捐贈/3.載具）：<br>
+                                統一編號//載具條碼：
+                            </p>
+                        </div>
+                        <div class="buttonbox">
+                            <button class="copybtn" type="button" onclick="copyEvent('copy')">點此複製表格</button>
+                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F224752570965822%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink"
+                                target="_blank"><button>點此私訊</button></a>
+                        </div>
+                    </div>
+
+                    <div class="discopy">
+                        <h1>複製成功！</h1>
+                    </div>
+
+
+
+                    <script>
+                        function copyEvent(id) {
+                            var str = document.getElementById(id);
+                            window.getSelection().selectAllChildren(str);
+                            document.execCommand("Copy")
+                        }
+                    </script>
+
+
+                    <script type="text/javascript">
+                        $(function () {
+                            $('.copybtn').click(function () {
+                                console.log("The name is: " + name);
+
+                                $('.discopy').show(1);
+                            });
+
+                        });
+                        setInterval(function () {
+                            document.querySelector('.discopy').style.display = 'none';
+                        }, 3000);
+                        ;
+
+                    </script>
+
+
+
+
+                    <p class="smallp">＊目前有的優惠活動僅擇一使用，不可同時使用<br>
+                        ＊LINE加購優惠：加入官方LINE好友，可領取優惠券(使用需截圖出示)<br>
+                        ＊免運優惠：消費滿3000元 或 任選4份指定塔類甜點/十吋不切塔<br>
+                        ※壽星優惠：壽星憑證件訂購享滿額禮 (生日前後五天內可使用)
+                    </p>
+                </div>
+            </div>
+            <div class="triangle" data-aos="fade-down"></div>
+            <div class="container">
+                <div class="step" data-aos="fade-down">
+                    <div class="steptextbox">
+                        <div class="iconpic">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>等候工作人員確認總金額及提供線上付款連結</h3>
+                        <p>為了避免客人匯錯金額或是未經確認就自行決定出貨日期，我們會先確認您的訂單是沒有問題的再提供線上付款連結喔！因此若未收到回覆就表示未成功完成下單喔!<br>
+                            付款方式：線上刷卡/超商代碼繳費/匯款
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="triangle" data-aos="fade-down"></div>
+            <div class="container">
+                <div class="step" data-aos="fade-down">
+                    <div class="steptextbox">
+                        <div class="iconpic">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>等待約定日期 到現場領取/在家收取 好吃的甜點！</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row footerbox">
+                <div class="icon col">
+                    <a class="fb" href="https://www.facebook.com/minuit1200/?ref=page_internal"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a class="ig" href="https://www.instagram.com/minuit1200/"><i class="fab fab fa-instagram"></i></a>
+                    <a class="LINE" href="https://liff.line.me/1654883387-DxN9w07M/c/NbA1D3ypN"><i class="fab fa-line"></i></a>
+                </div>
+                <div class="line2"></div>
+                <div class="tel col">
+                    <p><i class="fas fa-phone-alt"></i> 02-2367-3067</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 臺北市大安區金山南路二段141巷1號</p>
+                </div>
+
+            </div>
+        </div>
+        <P class="c">Copyright ©minuity All Rights Reserved.</P>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        AOS.refresh();
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每月壽星優惠-深夜裡的法國手工甜點</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="./home.html"><img src="./img/logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav1" id="navbarNav">
+            <ul class="navbar-nav nav1">
+                <li class="nav-item ml-5">
+                    <a class="nav-link" href="./menu.html">菜單</a>
+                </li>
+                </li>
+
+                <li class="nav-item mr-5 ml-5">
+                    <a class="nav-link" href="./news.html">優惠資訊</a>
+                </li>
+                <a class="logo" href="./home.html"><img src="./img/logo.jpg" alt=""></a>
+                <li class="nav-item ml-5 mr-5">
+                    <a class="nav-link" href="./reserve.html">預定流程</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./store.html">店面資訊</a>
+                </li>
+            </ul>
+
+        </div>
+
+        </div>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        let lastScorll = 0;
+        $(window).scroll(function () {
+            const nowScroll = $(this).scrollTop();
+            if (nowScroll > lastScorll) {
+                $('.navbar').addClass('hide')
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+            lastScorll = nowScroll;
+        })
+    </script>
+
+    <div class="newsinfo container" data-aos="fade-up"
+    data-aos-duration="2000">
+        <h1>每月壽星優惠</h1>
+        <div class="row newsinfo2">
+            <div class="infopic img-wrap col-lg-8">
+                <img src="./img/newsinfo-2.jpg" alt="">
+            </div>
+            <div class="infotext col-lg-8">
+                <div class="">
+                    <h6>【 注意事項 】</h6>
+                    <ul>
+                        <li>
+                            15歲以下壽星可由家人代訂
+                        </li>
+                        <li>可與其他優惠併用，以使用後的金額為主（至多搭配一個優惠）</li>
+                        <li>指定期間內，生日優惠使用次數不限</li>
+                        <li>每單筆消費每種贈禮限兌換一次</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div  class="back" data-aos="fade-left">
+            <a class="link" href="./news.html"> <i class="fas fa-chevron-left"></i> 返回優惠資訊</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+          <div class="row footerbox">
+            <div class="icon col">
+              <a class="fb" href="https://www.facebook.com/minuit1200/?ref=page_internal"><i
+                  class="fab fa-facebook-square"></i></a>
+              <a class="ig" href="https://www.instagram.com/minuit1200/"><i class="fab fab fa-instagram"></i></a>
+              <a class="LINE" href="https://liff.line.me/1654883387-DxN9w07M/c/NbA1D3ypN"><i class="fab fa-line"></i></a>
+            </div>
+            <div class="line2"></div>
+            <div class="tel col">
+              <p><i class="fas fa-phone-alt"></i> 02-2367-3067</p>
+              <p><i class="fas fa-map-marker-alt"></i> 臺北市大安區金山南路二段141巷1號</p>
+            </div>
+  
+          </div>
+        </div>
+        <P class="c">Copyright ©minuity All Rights Reserved.</P>
+      </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
